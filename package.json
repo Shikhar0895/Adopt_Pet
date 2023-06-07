@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d src",
     "build": "vite build",
     "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -28,7 +28,8 @@
     "eslint-plugin-react-refresh": "^0.4.1",
     "gh-pages": "^5.0.0",
     "prettier": "^2.8.8",
-    "vite": "^4.3.6"
+    "vite": "^4.3.6",
+    "vite-plugin-gh-pages": "^0.4.1"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.10.1",
