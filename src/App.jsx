@@ -23,11 +23,11 @@ const App = () => {
       <QueryClientProvider client={queryClient}>
         <AdoptedPetContext.Provider value={adoptedPet}>
           <header>
-            <Link to="/">Adopt Me!</Link>
+            <Link to="Adopt_Pet/">Adopt Me!</Link>
           </header>
           <Routes>
-            <Route path="/details/:id" element={<Details />} />
-            <Route path="/" element={<SearchParams />} />
+            <Route path="details/:id" element={<Details />} />
+            <Route path="Adopt_Pet/" element={<SearchParams />} />
           </Routes>
           <ReactQueryDevtools />
         </AdoptedPetContext.Provider>
@@ -35,6 +35,7 @@ const App = () => {
     </BrowserRouter>
   );
 };
-const container = document.getElementById("root");
-const root = createRoot(container);
-root.render(<App />);
+// const container = document.getElementById("root");
+// const root = createRoot(container);
+// root.render(<App />);
+createRoot(document.getElementById("root")).render(<App />);

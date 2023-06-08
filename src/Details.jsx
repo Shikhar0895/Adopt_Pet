@@ -41,7 +41,7 @@ const Details = () => {
                 <button
                   onClick={() => {
                     setAdoptedPet(pet);
-                    navigate("/");
+                    navigate("/Adopt_Pet");
                   }}
                 >
                   Yes
